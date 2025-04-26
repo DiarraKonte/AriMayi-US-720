@@ -1,0 +1,23 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020, //add modern syntax of ECMAScript for the file to be read by eslint
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error" // add error for variable decalred but never used
+    ]
+    // "no-console": [
+    //   "warn",
+    //   "log",
+    //   "any"
+    // ] //add warning message for console using (console.log, console.warn)
+  }
+}
